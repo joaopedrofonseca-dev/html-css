@@ -1,0 +1,40 @@
+* {
+font-family: Arial, Helvetica, sans-serif;
+/* Medidas Absolutas
+   cm, mm, in(polegada), px, pt(ponto), pc(pic)
+
+   Medidas Relativas 
+   em(tamanho da letra M maiúscula), ex(tamanho da letra x), rem, vw(visualização da largura), vh(viisualização através da altura), %
+
+   obs: as recomendadas pela empresa de proogramação oficial mundial é a utilização da medida px e em, com ênfase na medida em.
+   16px é o tamanho padrão adotado pelos sites, sendo igual a 1em, ou seja: 16px = 1em
+*/
+
+}
+
+body {
+background-image: linear-gradient(to right, #D6FFFE, #92FFFE);
+}
+
+main {
+background-color: #ffe2d3;
+border-radius: 10px;
+box-shadow: 5px 5px 15px #8a766ba1;
+width: 600px;
+padding: 10px;
+margin: auto;
+}
+
+h1 {
+color: #D19979;
+text-align: center;
+text-shadow: 1px 1px 2px #745443a4;
+}
+
+h2 {
+color: #096d6b;
+}
+
+p {
+text-align: justify;
+}

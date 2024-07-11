@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+        background-color: aqua;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        }
+
+        header {
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 2px;
+        }
+
+        nav {
+        text-align: left;
+        padding-right: 10px;
+        text-indent: 10px;
+        }
+
+        nav > a {
+        text-align: left;
+        text-decoration: none;
+        color: white;
+        margin-right: 5px;
+        }
+
+        nav > a:hover {
+        text-decoration: underline;
+        }
+
+        main {
+        background-color: beige;
+        margin: 0;
+        padding: 10px;
+        }
+
+        section > h1 {
+        text-align: center;
+        padding: 5px;
+        }
+
+        section > p {
+        text-align: justify;
+        text-indent: 24px;
+        padding: 1px;
+        margin: 5px;
+        }
+
+        article {
+        background-color: beige;
+        color: black;
+        text-align: right;
+        font-size: 8px;
+        padding: 0;
+        margin: 0;
+        }
+
+        footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        margin: 0;
+        padding: 1px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Noticias de Hoje</a>
+            <a href="#">Esportes</a>
+            <a href="#">Programas</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Notícias dos Esportes</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos laudantium omnis, nesciunt aspernatur error obcaecati nostrum facere, incidunt eaque minima sit, enim fugit saepe voluptas similique ipsum est expedita? Consectetur?</p>
+            <article>
+                Artigo escrito pelo programa
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por João Pedro</p>
+    </footer>
+</body>
+</html>

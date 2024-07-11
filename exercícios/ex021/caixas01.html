@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+    <style>
+              /* Estilos de borda
+              
+              border-style possui algumas opções de variações, são elas:
+
+              solid: linhas normais, cheias
+              dashed: tracejado
+              dotted: pontilhado
+              doble: linhas duplas
+              groove: margem estilo 3d
+
+              */
+
+              /* Estilo de margem
+              
+              Margin é um código para estabelecer um espaçamento entre caixas e extremos das páginas.
+
+              Ela é medida na forma de pixels, tendo as denominações para o top, right, bottom e left, sempre nessa sequencia horária.
+
+              Porém, caso queira colocar a caixa sempre centralizada, mesmo com a modificação de tamanho da página, apenas coloque o comando "auto" e já será calculado automaticamente para o centro.
+              */
+              
+        body { 
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: normal;
+        }
+        
+        h1 { /* box-level */
+            text-align: center;
+            color: white;
+            background-color: black;
+            height: 24px;
+            width: 100%;
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+
+            /* todos esses codigos de border podem ser substituídos por apenas "border: 10px solid black", nesta exata sequencia (width-style-color) */
+
+            padding-top: 1px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px;
+
+            /* todos esses codigos de padding podem ser subbstituídos por um único código "padding: 1px 1px 1px 2px", respeitando a sequência do sentido horário (top-right-ottom-left). Caso todos os tamanhos sejam iguais, bbasta colocar apenas uma vez "padding: 1px;" */
+
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+
+            /* a mesma coisa serve para o código margin.
+            "margin: 1px 2px 3px 4px", sempre na sequência horária.*/
+
+            outline-width: 10px;
+            outline-style: solid;
+            outline-color: black;
+
+            /* funciona da mesma forma que o código border."outline: 10px solid red", seguindo a sequência correta (width-style-color).*/
+        }
+
+        a { /* inline-level */
+            border: 5px solid yellow;
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+
+            margin-top: 40px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        p {
+            text-indent: 16px;
+            text-align: justify;
+            margin-top:30px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
