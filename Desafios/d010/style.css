@@ -9,6 +9,7 @@ color: white;
 }
 
 header > p {
+margin: auto;
 text-align: center;
 word-wrap: break-word;
 width: 390px;
