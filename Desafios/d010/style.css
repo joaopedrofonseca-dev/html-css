@@ -10,7 +10,7 @@ color: white;
 
 header > p {
 margin: auto;
-text-align: center;
+text-align: auto;
 word-wrap: break-word;
 width: 390px;
 padding: 0px 200px 0px 200px;
