@@ -17,12 +17,22 @@
 
         h1 {
             margin: 20px;
+            text-align: center;
         }
 
         table {
+            width: 500px;
             border-collapse: collapse;
             padding: 20px;
             margin: 20px;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         thead, tfoot {
@@ -30,11 +40,20 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         th, td {
-            width: 150px;
             padding: 10px;
             text-align: center;
             border: 1px solid black;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         .num {
@@ -47,23 +66,27 @@
 <body>
     <!--Anatomia da tabela grande
         Table
+            Caption - título ou legenda da tabela
             THead
                 Tr, Td, Th
             Tbody
                 Tr, Td, Th
             TFoot
                 Tr, Td, Th
+    
+    scope - um classificaçao para dizer que aquele código é um título dos dados
     -->
     <div>
         <h1>
             Uso de tabelas grandes
         </h1>
         <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
-                    <th>Posição</th>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col" style="width: 50px;">Posição</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
                 </tr>
             </thead>
             <tbody>
@@ -100,7 +123,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total</th>
+                    <th scope="row">Total</th>
                     <td>6</td>
                     <td class="num"><strong>122.082.063</strong></td>
                 </tr>
