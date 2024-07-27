@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 98vh;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-indent: 10px;
+            padding: 5px;
+        }
+
+        p > a {
+            text-decoration: underline;
+            color: rgb(1, 190, 1);
+        }
+
+        iframe {
+            width: 500px;
+            height: 250px;
+            margin-top: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.555);
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.452);
+        }
+    </style>
+</head>
+<body>
+    <!-- Padrão do iframe é de 300x150 -->
+    <h1>Testando o uso de um iframe</h1>
+
+    <p>Acessando o site do <a href="https://joaopedrofonseca-dev.github.io/projeto-android/" target="_blank">Projeto Android</a> desenvolvido durante o estudo do cuurso de HTML5 e CSS3 do professor Gustavo Guanabara na plataforma <iframe src="https://www.cursoemvideo.com" frameborder="0"><a href="https://www.cursoemvideo.com">Curso em Video</a></iframe></p>
+</body>
+</html>
