@@ -12,6 +12,7 @@ html, body {
 
 header {
     background-color: rgba(128, 128, 128, 0.637);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
 }
 
 header h1 {
@@ -56,12 +57,13 @@ menu > ul > li > a:hover {
 }
 
 main {
-    width: 85vw;
+    width: 83vw;
     background-color: white;
     margin: auto;
     margin-top: 10px;
     border-radius: 10px;
     padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.425);
 }
 
 article h2 {
