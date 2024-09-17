@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização de box's</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightsalmon;
+        }
+
+        .conteiner {
+            width: 100vw;
+            height: 100vh;
+            background-color: lightseagreen;
+
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .itens {
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="itens">
+            <h1>
+                Tela de Login
+            </h1>
+        </div>
+    </div>
+</body>
+</html>
